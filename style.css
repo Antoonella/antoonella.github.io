@@ -448,6 +448,10 @@ nav {
 
 */
 
+.project {
+  margin-bottom: 90px;
+}
+
 .section__title {
   text-align: center;
   font-size: 48px;
