@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="style.css">
   <script src="index.js"></script>
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("meIfD0JM-B58tYpQ3");
-   })();
-</script>
+    })();
+  </script>
 </head>
 
 <body>
@@ -27,7 +26,7 @@
         <img id="personal-logo" src="./assets/logo.png" alt="">
       </figure>
       <ul class="nav__link--list">
-        <li class="nav__link"  onclick="toggleModal()">
+        <li class="nav__link" onclick="toggleModal()">
           <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -69,7 +68,7 @@
           Here's a bit more <b class="purple click" onclick="toggleModal()">about me.</b>
         </p>
         <div class="social__list">
-          <a href="https://www.linkedin.com/in/antonella-m-754015168/" class="social__link click">
+          <a href="https://www.linkedin.com/in/antonella-m-754015168/" target="_blank" class="social__link click">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/Antoonella" target="_blank" class="social__link click ">
@@ -82,9 +81,9 @@
       </div>
     </header>
     <a href="#">
-          <button class="mail__btn click" onclick="toggleModal()">
-      <i class="fas fa-envelope"></i>
-    </button>
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
     </a>
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
@@ -94,10 +93,12 @@
         <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
         <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
         <p class="modal__para">
-          I am a <b class="purple">Frontend developer</b>/<b class="purple">designer</b> based in Sydney, I offer 5 years of developer experience with a proven skills of building web applications through all stages, 
+          I am a <b class="purple">Frontend developer</b>/<b class="purple">designer</b> based in Sydney, I offer 5
+          years of developer experience with a proven skills of building web applications through all stages,
           from <b class="purple">idea</b> to <b class="purple">deployment.</b>
           <br>
-          I am passionate about computer software and web designs to deliver  <b class="purple">high quality</b> solutions with great user experiences that positively impact the world. 
+          I am passionate about computer software and web designs to deliver <b class="purple">high quality</b>
+          solutions with great user experiences that positively impact the world.
         </p>
         <div class="modal__languages">
           <figure class="modal__language">
@@ -118,62 +119,64 @@
           </figure>
           <figure class="modal__language">
             <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+              alt="">
             <span class="language__name">React</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="">
+            <img class="modal__language--img" src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="">
             <span class="language__name">Firebase</span>
           </figure>
           <figure class="modal__language">
             <img class="modal__language--img"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4NSvpjNXPpinyBfa2sefyUPLirJnD3Lkw5B_F5a_&s" alt="">
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4NSvpjNXPpinyBfa2sefyUPLirJnD3Lkw5B_F5a_&s"
+              alt="">
             <span class="language__name">Ruby on Rails</span>
           </figure>
           <figure class="modal__language">
             <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" alt="">
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png"
+              alt="">
             <span class="language__name">Sass</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="">
+            <img class="modal__language--img" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              alt="">
             <span class="language__name">Git</span>
           </figure>
         </div>
       </div>
       <div class="modal__half modal__contact">
         <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-      <h3 class="modal__title modal__title--contact">
-        Let's have a chat!
-      </h3>  
-      <h4 class="modal__sub-title modal__sub-title--contact">
-        I'm currently open to new opportunities.
-      </h4> 
-      <form id="contact__form" onsubmit="contact(event)">
-        <div class="form__item">
-          <label class="form__item--label">Name</label>
-          <input class="input" name="user_name" type="text" required></input>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h4 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h4>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
         </div>
-        <div class="form__item">
-          <label class="form__item--label">Email</label>
-          <input class="input" name="user_email" type="email" required></input>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
         </div>
-        <div class="form__item">
-          <label class="form__item--label">Message</label>
-          <textarea class="input" name="message" type="text" required></textarea>
-        </div>
-        <button id="contact__submit" class="form__submit">
-          Send it my way
-        </button>
-      </form>
-      <div class="modal__overlay modal__overlay--loading">
-        <i class="fas fa-spinner"></i>
-      </div>
-      <div class="modal__overlay modal__overlay--success">
-        Thanks for the message! Looking forward to speaking to you soon.
-      </div>
       </div>
     </div>
     <img src="./assets/semi circle.svg" class="shape shape--0">
@@ -206,13 +209,15 @@
                   Html, CSS, JavaScript, React, API
                 </h4>
                 <p class="project__description--para">
-                  Movie platfom built with React and using API to fetch movies data. 
+                  Movie platfom built with React and using API to fetch movies data.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/Antoonella/Pandafilm-Movie-Platform" target="_blank" class="project__description--link">
+                  <a href="https://github.com/Antoonella/Pandafilm-Movie-Platform" target="_blank"
+                    class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://pandafilm-movie-platform-antoonella.vercel.app/" target="_blank" class="project__description--link">
+                  <a href="https://pandafilm-movie-platform-antoonella.vercel.app/" target="_blank"
+                    class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
@@ -231,10 +236,12 @@
                   Html, CSS, JavaScript, React, API
                 </h4>
                 <p class="project__description--para">
-                  library Ecommerce App built with React by using fake books data with the functionality to book to card and display ratings by sale price. 
+                  library Ecommerce App built with React by using fake books data with the functionality to book to card
+                  and display ratings by sale price.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/Antoonella/Library-ecommerce" target="_blank" class="project__description--link">
+                  <a href="https://github.com/Antoonella/Library-ecommerce" target="_blank"
+                    class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
                   <a href="https://library-ecommerce-mu.vercel.app/" target="_blank" class="project__description--link">
@@ -259,17 +266,19 @@
                   Twetter Clone is a social media app that implenent posting Tweets and store them in firebase database.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/Antoonella/twitter-clone" target="_blank" class="project__description--link">
+                  <a href="https://github.com/Antoonella/twitter-clone" target="_blank"
+                    class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://twitter-clone-alpha-neon.vercel.app/" target="_blank" class="project__description--link">
+                  <a href="https://twitter-clone-alpha-neon.vercel.app/" target="_blank"
+                    class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
               </div>
             </div>
           </li>
-                 <li class="project">
+          <li class="project">
             <div class="project__wrapper">
               <img src="./assets/cocobuds.png" class="project__img" alt="">
               <div class="project__wrapper--bg"></div>
@@ -281,7 +290,8 @@
                   Html, CSS, JavaScript, Ruby, Sass, PostgreSQL
                 </h4>
                 <p class="project__description--para">
-                  Cocobuds is a two-sided marketplace and networking app I built with my teammates at Coder Academy Bootcamp for our Ruby on Rails project.
+                  Cocobuds is a two-sided marketplace and networking app I built with my teammates at Coder Academy
+                  Bootcamp for our Ruby on Rails project.
                 </p>
                 <div class="project__description--links">
                   <a href="https://github.com/alexdiwa/cocobuds" target="_blank" class="project__description--link">
